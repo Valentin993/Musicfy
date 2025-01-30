@@ -4,12 +4,12 @@ import "./globals.css";
 const swiza = localFont({
   src: [
     {
-      path: "/fonts/swiza-regular-webfont.woff2",
+      path: "./fonts/swiza-regular-webfont.woff2",
       weight: "400",
       style: "normal",
     },
     {
-      path: "/fonts/swiza-medium-webfont.woff2",
+      path: "./fonts/swiza-medium-webfont.woff2",
       weight: "500",
       style: "normal",
     },
@@ -25,7 +25,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={` antialiased`}>{children}</body>
+      <body className={`${swiza.className} antialiased`}>{children}</body>
     </html>
   );
 }
