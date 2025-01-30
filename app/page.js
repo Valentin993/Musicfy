@@ -15,7 +15,7 @@ export default function Home() {
               <Link href="/trending">Trending</Link>
             </li>
             <li>
-              <Link href="/artist">Artist</Link>
+              <Link href="/artists">Artists</Link>
             </li>
             <li>
               <Link href="/pricing">Pricing</Link>
