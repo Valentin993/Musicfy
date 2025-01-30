@@ -1,14 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const swiza = localFont({
+  src: [
+    {
+      path: "/fonts/swiza-regular-webfont.woff2",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "/fonts/swiza-medium-webfont.woff2",
+      weight: "500",
+      style: "normal",
+    },
+  ],
 });
 
 export const metadata = {
@@ -19,11 +24,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <body className={` antialiased`}>{children}</body>
     </html>
   );
 }
