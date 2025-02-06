@@ -10,6 +10,9 @@ export default {
       center: true,
     },
     extend: {
+      boxShadow: {
+        "inner-custom": "inset 0px 4px 70px 70px rgba(86, 85, 85, 0.25)",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
