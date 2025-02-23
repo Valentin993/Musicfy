@@ -5,6 +5,12 @@ import artistAnalytics from "../public/artist-analytics.svg";
 import paasInsights from "../public/paas-insights.svg";
 import paasImage from "../public/paas.jpg";
 import arrow from "../public/thin-long-arrow-right-icon.svg";
+import synth from "../public/synth.svg";
+import cornet from "../public/cornet.svg";
+import harp from "../public/harp.svg";
+import cassette from "../public/cassette.svg";
+import headphone from "../public/headphone.svg";
+import piano from "../public/piano.svg";
 
 export default function Home() {
   return (
@@ -13,12 +19,38 @@ export default function Home() {
         {/*  Hero Section */}
         <section className="py-40">
           <div className="container lg:max-w-screen-lg px-4">
-            <div className="flex flex-col items-center justify-center">
-              <h1 className="font-medium text-5xl lg:text-6xl text-center mb-6 leading-snug">
+            <div className="flex flex-col items-center justify-center mt-[140px]">
+              <div className="hidden 2xl:flex 2xl:flex-wrap">
+                <div className="bg-[#F6E18D] w-[230px] h-[230px] flex flex-wrap justify-center absolute left-[437px] top-[193px]">
+                  <Image src={synth} alt="" />
+                </div>
+
+                <div className="bg-[#8EE5A1] w-[180px] h-[180px] flex justify-center absolute left-[880px] top-[130px]">
+                  <Image src={cornet} alt="" />
+                </div>
+
+                <div className="bg-[#FBA9A9] w-[250px] h-[250px] flex justify-center absolute left-[1210px] top-[180px]">
+                  <Image src={harp} alt="" />
+                </div>
+
+                <div className="bg-[#8CDDEF] w-[230px] h-[230px] flex justify-center absolute left-[647px] top-[430px]">
+                  <Image src={cassette} alt="" />
+                </div>
+
+                <div className="bg-[#D9D9D9] w-[160px] h-[160px] flex justify-center absolute left-[990px] top-[530px]">
+                  <Image src={headphone} alt="" />
+                </div>
+
+                <div className="bg-[#CBE48F] w-[190px] h-[190px] flex justify-center absolute left-[1260px] top-[438px]">
+                  <Image src={piano} alt="" />
+                </div>
+              </div>
+
+              <h1 className="font-medium text-5xl lg:text-6xl text-center mb-6 leading-snug relative">
                 <span className="block">Music Trends, Artists, and</span>
                 <span className="block"> Insights at Your Fingertips.</span>
               </h1>
-              <p className="text-base lg:text-lg text-center mb-8 max-w-[724px]">
+              <p className="text-base lg:text-lg text-center mb-8 max-w-[724px] mt-[240px]">
                 Musicfy is your all-in-one platform for real-time music trends,
                 artist analytics, and actionable insights to stay ahead in the
                 industry.
